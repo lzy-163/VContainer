@@ -86,5 +86,5 @@ jobs:
         # customParameters: -testSettingsFile ./testSettings.json
     - uses: actions/upload-artifact@v3
       with:
-        name: Test results
+        name: Test results (${{ matrix.unityVersion }} - ${{ matrix.feature }})
         path: artifacts
